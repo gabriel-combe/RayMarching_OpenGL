@@ -94,6 +94,9 @@ int main(int argc, char **argv) {
 		deltaTime = currentFrame - lastFrame;
 		lastFrame = currentFrame;
 
+		// Print process time (second/frame)
+		std::cout << deltaTime << " second per frame." << std::endl;
+
 		// input
 		processInput(window);
 
